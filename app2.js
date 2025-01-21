@@ -41,15 +41,25 @@ const scoreDisplay = document.querySelector('#score');
 const questionText = document.querySelector('#question');
 const questionImage = document.querySelector('#question-image');
 const pageDisplay = document.querySelector('#page');
-const limitQestion = questions.slice(0, 3);
-const limitQestions = questions.slice(3, 6);
+const mathButton = document.querySelector('#math');
+const geoButton = document.querySelector('#geo');
+const limitQestion = questions.slice(3, 6);
 const displayMain = document.querySelector('#MainButton')
+
+
 function StartQuiz() {
     document.getElementById('nextButton').addEventListener('click', checkAnswer);
     document.getElementById('subButton').addEventListener('click', displayQuestion);
+
+
+
+    displayQuestion();
 }
 
+
+
 function displayQuestion() {
+
     if (questionIndex < limitQestion.length) {
         questionText.textContent = limitQestion[questionIndex].question;
         questionImage.src = limitQestion[questionIndex].image;
@@ -72,15 +82,16 @@ function checkAnswer() {
     const userInput = document.getElementById('answerInput').value.toLowerCase();
     const correctAnswer = limitQestion[questionIndex].answer;
     document.getElementById('nextButton').disabled = true;
+
     if (userInput === correctAnswer) {
         displayResult.textContent = "Correct Answer!";
         score++;
         scoreDisplay.textContent = `Score: ${score}`;
     } else {
         displayResult.textContent = "Wrong Answer!";
+
     }
 
     questionIndex++;
 }
-
 StartQuiz();
