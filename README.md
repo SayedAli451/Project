@@ -1,11 +1,6 @@
 # Quiz Game
 Welcome to the Quiz Game! This web application offers interactive quizzes in various subjects, including Geography and Math. Test your knowledge and have fun while learning!
 
-# Pages
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-
 ## Features
 - Interactive quizzes for different subjects.
 
@@ -27,10 +22,15 @@ To run this project locally, follow these steps:
 
 1. **Start the Quiz**:
    - Click on the "Category" Image to begin the quiz.
+   ![alt text](image-1.png)
+   
 
 2. **Answering Questions**:
    - You will be presented with a question along with an image related to the question.
    - Type your answer in the input field provided.
+   ![alt text](image-2.png)
+   ![alt text](image-3.png)
+
 
 3. **Submit Your Answer**:
    - Click the "Submit" button to submit your answer.
