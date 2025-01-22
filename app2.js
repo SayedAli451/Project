@@ -17,17 +17,17 @@ const questions = [
     {
         question: "What is the value",
         answer: "25",
-        image: "/assets/image2.png"
+        image: "./assets/image2.png"
     },
     {
         question: "What is the value",
         answer: "100",
-        image: "/assets/image3.png"
+        image: "./assets/image3.png"
     },
     {
         question: "What is the value",
         answer: "0.25",
-        image: "/assets/image1.png"
+        image: "./assets/image1.png"
     }
 ];
 
