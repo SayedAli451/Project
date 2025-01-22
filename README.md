@@ -19,9 +19,9 @@ Welcome to the Quiz Game! This web application offers interactive quizzes in var
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/SayedAli451/Project.git
-   cd Project
-   code .
+   -git clone https://github.com/SayedAli451/Project.git
+   -cd Project
+   -code .
    
 ## How to Play the Quiz Game
 
