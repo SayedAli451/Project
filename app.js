@@ -22,7 +22,7 @@ const questions = [
     {
         question: "What is the value",
         answer: "100",
-        image: "/assets/image3.png"
+        image: "/assets/image3.png" 
     },
     {
         question: "What is the value",
@@ -31,11 +31,11 @@ const questions = [
     }
 ];
 
-
+/*---------------------------- Variables (state) ----------------------------*/
 let questionIndex = 0;
 let score = 0;
 
-
+/*------------------------ Cached Element References ------------------------*/
 const displayResult = document.querySelector('#result1');
 const displayResult1 = document.querySelector('#result2');
 const scoreDisplay = document.querySelector('#score');
@@ -45,12 +45,11 @@ const pageDisplay = document.querySelector('#page');
 const limitQestion = questions.slice(0, 3);
 const limitQestions = questions.slice(3, 6);
 const displayMain = document.querySelector('#MainButton')
-
+/*-------------------------------- Functions --------------------------------*/
 function StartQuiz() {
     document.getElementById('nextButton').addEventListener('click', checkAnswer);
     document.getElementById('subButton').addEventListener('click', displayQuestion);
 }
-
 function displayQuestion() {
     if (questionIndex < limitQestion.length) {
         questionText.textContent = limitQestion[questionIndex].question;

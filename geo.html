@@ -14,7 +14,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Quiz Game</a>
-            <button class="navbar-toggler" type="button">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -35,21 +37,23 @@
                 <h3>Score: 0</h3>
             </div>
         </div>
-        <h1 class="mb-4">Geography Quiz</h1>
-        <div class="question-container mb-4">
+        <h1 class="mb-4 text-center">Geography Quiz</h1>
+        <div class="question-container mb-4 text-center">
             <p class="subQues" id="question">What is the capital of France?</p>
             <img id="question-image" src="https://wallpaperaccess.com/full/1192224.jpg" alt="Img1"
-                class="img-fluid rounded">
+                class="img-fluid rounded mx-auto d-block">
         </div>
         <div class="input mb-4">
             <input type="text" id="answerInput" class="AnsInput form-control" placeholder="Answer" />
-            <input type="button" value="Submit" class="btn btn-success btn-sm mt-2" id="nextButton">
+            <div class="d-flex justify-content-between mt-2">
+                <input type="button" value="Submit" class="btn btn-success btn-sm" id="nextButton">
+                <input type="button" value="Next" class="btn btn-primary" id="subButton">
+            </div>
             <h2 id="result1" class="mt-2"></h2>
-            <input type="button" value="Next" class="btn btn-primary mt-2" id="subButton">
             <h2 id="result2" class="mt-2"></h2>
             <p class="page" id="page">1/3</p>
         </div>
-        <div>
+        <div class="text-center">
             <a href="index.html">
                 <input type="button" value="Main Page" class="btn btn-outline-secondary btn-lg" id="MainButton">
             </a>
